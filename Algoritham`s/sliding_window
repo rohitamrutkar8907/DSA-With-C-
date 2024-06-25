@@ -1,0 +1,5 @@
+# use for substring/subarray
+# if we req to find largest subarray sum,max sum in all subarray like that que 
+# solve by sliding window
+
+# subarray+largest/maxi+target=sliding window

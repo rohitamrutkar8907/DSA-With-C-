@@ -1,0 +1,2 @@
+1.kmp (Knuth–Morris–Pattern)
+2.rabin karp
