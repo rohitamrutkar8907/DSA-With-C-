@@ -1,0 +1,80 @@
+Array:
+ contiguous memory allocation with fixed size
+Syntax==>  array<int, 5> ar1;
+ 
+
+Vector: 
+ contiguous memory allocation with here size is not fixed its size change
+ dynamically.
+Syntax==>  vector<int> g1
+
+
+Dequeue:
+Double-ended queues are sequence containers with the feature of expansion
+ and contraction on both ends. They are similar to vectors, but are more 
+ efficient in case of insertion and deletion of elements. Unlike vectors, 
+ contiguous storage allocation may not be guaranteed.
+Syntax==>  deque<int> Dq;
+
+
+List:
+Lists are sequence containers that allow non-contiguous memory allocation.
+ As compared to vector, the list has slow traversal, but once a position 
+ has been found, insertion and deletion are quick. Normally, when we say 
+ a List, we talk about a doubly linked list. For implementing a singly 
+ linked list, we use a forward list. 
+Syntax==>  list<int> gqlist1;
+
+
+Stacks:
+Stacks are a type of container adaptors with LIFO(Last In First Out) type 
+of working, where a new element is added at one end (top) and an element 
+is removed from that end only. 
+Syntax==>  stack<int> stack;
+
+
+Queues:
+Queues are a type of container adaptors that operate in a first in first 
+out (FIFO) type of arrangement. Elements are inserted at the back (end) 
+and are deleted from the front. Queues use an encapsulated object of deque 
+or list (sequential container class) as its underlying container, providing 
+a specific set of member functions to access its elements.
+Syntax==>  queue<int> q1;
+
+
+Priority queue:
+First element of the queue is either the greatest or the smallest of all 
+elements in the queue, and elements are in non-increasing or non-decreasing order 
+In C++ STL, the top element is always the greatest by default. 
+We can also change it to the smallest element at the top. 
+    max_heap_:max element at top
+    Syntax==>  priority_queue<int> pq;
+    min_heap : min element at top
+    Syntax==>  priority_queue <int, vector<int>, greater<int>> gq;
+
+
+Sets:
+Sets are a type of associative container in which each element has to be 
+unique .Set is implemented as a balanced tree
+The values are stored in a specific sorted order
+i.e. either ascending or descending.
+Syntax==>  set<char> a;
+
+
+Unordered_set:
+unordered_set is a set in which key can be stored in any order, so unordered. 
+An unordered_set is implemented using a hash table
+Syntax==>  unorder_set<char> a;
+
+
+Map:
+Maps are associative containers that store elements in a mapped fashion. 
+Each element has a key value and a mapped value. No two mapped values can 
+have the same key values.
+The time complexity of map operations is O(log n)
+Syntax==>  map<string, int> umap;
+
+Unordered_map:
+unordered_map is implemented using Hash Table,
+The time complexity of unordered_map operations is O(1) on average.
+Syntax==>  unordered_map<string, int> umap;
